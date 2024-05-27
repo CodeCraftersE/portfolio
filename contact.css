@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    color: #fff;
+    background: #081b29;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 25px 10%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: 600;
+    color: #ededed;
+    text-decoration: none;
+}
+
+.navbar a {
+    font-size: 18px;
+    color: #ededed;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 30px;
+    transition: 0.4s;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color: #00abf0;
+}
+
+.contact-section {
+    padding: 100px 10%;
+    text-align: center;
+}
+.contact-section h1{
+    padding-bottom: 25px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    gap: 10px;
+}
+
+.input-box {
+    margin-bottom: 20px;
+    background-color: transparent;
+    border: 2px solid #00abf0;
+    border-radius: 10px;
+    border-width: 2px;
+    padding: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.input-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 30px rgba(0, 170, 240, 0.8);
+}
+
+.input-box.large {
+    width: 100%;
+}
+
+.input-box input,
+.input-box textarea {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background: transparent;
+    color: #fff;
+    font-size: 16px;
+    outline: none; /* Remove default outline */
+}
+
+.send-button {
+    background-color: #00abf0;
+    color: #fff;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.send-button:hover {
+    background-color: #007d99;
+    transform: scale(1.05);
+}

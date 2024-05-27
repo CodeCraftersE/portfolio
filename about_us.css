@@ -1,0 +1,189 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Josefin Sans', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    color: rgb(246, 246, 246);
+    background: #081b29;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 25px 10%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    transition: top 0.3s;
+}
+
+.header.hide {
+    top: -100px; /* Adjust this value if necessary */
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: 600;
+    color: #ededed;
+    text-decoration: none;
+}
+
+.navbar a {
+    font-size: 18px;
+    color: #ededed;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 30px;
+    transition: 0.4s;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color: #00abf0;
+}
+
+
+.about {
+    background: #081b29;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.about img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease, filter 0.3s ease;
+    filter: drop-shadow(0 0 10px #0ff) brightness(0.8);
+}
+
+.about img:hover {
+    transform: scale(1.05);
+    filter: drop-shadow(0 0 15px #0ff) brightness(1);
+}
+
+.about-text {
+    width: 550px;
+    max-width: 100%;
+}
+
+.main {
+    width: 1130px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+
+.about-text h1 {
+    padding-top: 100px;
+    color: rgba(210, 205, 205, 0.797);
+    font-size: 80px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+
+.about-text h5 {
+    color: rgb(158, 149, 149);
+    font-size: 32px;
+    text-transform: capitalize;
+    margin-bottom: 25px;
+    letter-spacing: 2px;
+}
+
+span {
+    color: rgb(70, 67, 67);
+}
+
+.about-text p {
+    color: rgb(233, 230, 230);
+    font-size: 18px;
+    line-height: 28px;
+    margin-bottom: 45px;
+    letter-spacing: 0.5mm;
+    word-spacing: 1mm;
+}
+
+.opacity {
+    padding-top: 300px;
+    padding-right: 30px;
+    width: 550px;
+    height: auto;
+    position: relative;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.opacity img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.opacity:hover {
+    opacity: 0.7;
+    transform: scale(1.05);
+}
+
+.tooltip {
+    visibility: hidden;
+    width: 450px;
+    font-size: 20px;
+    text-decoration: dotted;
+    background-color: transparent;
+    color: #00e1ff;
+    text-align: center;
+    border-radius: 5px;
+    padding: 10px;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.opacity:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
+}
+
+button {
+    background: rgb(94, 188, 225);
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 12px 30px;
+    border-radius: 30px;
+    transition: 0.4s;
+}
+.MX{
+    padding-bottom: 12px;
+}
+.cpt a {
+    text-decoration: none;
+    color: black;
+}
+
+.cpt a:hover {
+    color: rgb(34, 178, 73);
+}
+
+button:hover {
+    background: transparent;
+    border: 2px solid rgb(94, 188, 225);
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+}
