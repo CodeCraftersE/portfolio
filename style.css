@@ -172,7 +172,7 @@ body {
 .wrapper {
     position: fixed;
     right: 100px;
-    top: 50%;
+    top: 52%;
     transform: translateY(-50%);
     height: 520px;
     width: 520px;
@@ -424,3 +424,18 @@ body {
         transform: translateX(100%);
     }
 }
+
+.footer p{
+    color:#ededed;
+    font-weight: 400;
+    font-size: 18px;
+}
+.footer {
+    padding: 10px 20px;
+    text-align: center;
+    background-color: #08417a;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
